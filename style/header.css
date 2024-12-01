@@ -1,0 +1,47 @@
+.cabecalho__menu-hanburguer {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+
+}
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.container__imagem {
+    padding: 1em;
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    background-color:var(--branco);
+    padding: 1em;
+
+}
+.lista-menu__titulo {
+    color: var(--Laranja);
+    font-weight: 700;
+}
+.container__botao {
+    display: none;
+}
